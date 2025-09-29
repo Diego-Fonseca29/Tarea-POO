@@ -1,0 +1,5 @@
+El polimorfismo es fundamental para la extensibilidad del sistema de vehículos, como se observa en el método procesarVehiculos. 
+Esta flexibilidad asegura que el código existente permanezca inalterado, facilitando la incorporación de nuevas funcionalidades y tipos de objetos de forma limpia y eficiente.
+Al definir una interfaz común o una clase base Vehiculo con métodos como mover() y obtenerDetalles(), el sistema puede tratar a diferentes tipos de vehículos (Automóvil, Bicicleta, Motocicleta) de manera uniforme. 
+Esto significa que si se añade un nuevo tipo de vehículo, como un Camion, solo necesita implementar esos métodos comunes sin requerir cambios en procesarVehiculos. 
+Además, la verificación de la interfaz Combustible permite que solo los vehículos aplicables utilicen obtenerNivelCombustible() y recargarCombustible(). 
